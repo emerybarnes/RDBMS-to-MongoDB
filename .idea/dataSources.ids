@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source source="LOCAL" name="MySQL - exb5209@localhost" uuid="59fe7d2d-16e4-45bd-900e-97470dbadd07">
+    <database-info product="MySQL" version="5.6.16" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.31 ( Revision: alexander.soklakov@oracle.com-20140520065950-groqzzbvxprqdmnz )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <schema name="" catalog="exb5209"/>
+    <table name="department" schema="" catalog="exb5209" type="TABLE">
+      <column name="Dname" sqlType="VARCHAR" precision="15" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Dnumber" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Mgr_ssn" sqlType="VARCHAR" precision="15" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Mgr_start_date" sqlType="VARCHAR" precision="15" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="Dnumber"/>
+    </table>
+    <table name="dependent" schema="" catalog="exb5209" type="TABLE">
+      <column name="Essn" sqlType="VARCHAR" precision="15" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Dependent_name" sqlType="VARCHAR" precision="15" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Sex" sqlType="VARCHAR" precision="15" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Bdate" sqlType="VARCHAR" precision="15" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Relationship" sqlType="VARCHAR" precision="15" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="Essn,Dependent_name"/>
+    </table>
+    <table name="dept_locations" schema="" catalog="exb5209" type="TABLE">
+      <column name="Dnumber" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Dlocation" sqlType="VARCHAR" precision="15" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="Dnumber,Dlocation"/>
+    </table>
+    <table name="employee" schema="" catalog="exb5209" type="TABLE">
+      <column name="Fname" sqlType="VARCHAR" precision="15" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Minit" sqlType="VARCHAR" precision="15" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Lname" sqlType="VARCHAR" precision="15" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Ssn" sqlType="VARCHAR" precision="15" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Bdate" sqlType="VARCHAR" precision="15" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Street" sqlType="VARCHAR" precision="15" scale="0" nullable="false" jdbcType="12"/>
+      <column name="City" sqlType="VARCHAR" precision="15" scale="0" nullable="false" jdbcType="12"/>
+      <column name="State" sqlType="VARCHAR" precision="15" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Sex" sqlType="VARCHAR" precision="15" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Salary" sqlType="DOUBLE" precision="22" scale="0" nullable="false" jdbcType="8"/>
+      <column name="Super_ssn" sqlType="VARCHAR" precision="15" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Dno" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="Ssn"/>
+    </table>
+    <table name="project" schema="" catalog="exb5209" type="TABLE">
+      <column name="Pname" sqlType="VARCHAR" precision="15" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Pnumber" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Plocation" sqlType="VARCHAR" precision="15" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Dnum" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="Pnumber"/>
+    </table>
+    <table name="work_on" schema="" catalog="exb5209" type="TABLE">
+      <column name="Essn" sqlType="VARCHAR" precision="15" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Pno" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Hours" sqlType="DOUBLE" precision="22" scale="0" nullable="false" jdbcType="8"/>
+      <primary-key name="PRIMARY" columns="Essn,Pno"/>
+    </table>
+  </data-source>
+  <data-source source="LOCAL" name="UTA  - exb5209@omega.uta.edu" uuid="ebb9e33a-3009-4866-a012-0579b6150247">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+    <schema name="" catalog="exb5209"/>
+    <table name="DEPARTMENT" schema="" catalog="exb5209" type="TABLE">
+      <column name="Dname" sqlType="VARCHAR" precision="15" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Dnumber" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Mgr_ssn" sqlType="VARCHAR" precision="15" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Mgr_start_date" sqlType="VARCHAR" precision="15" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="Dnumber"/>
+    </table>
+    <table name="DEPENDENT" schema="" catalog="exb5209" type="TABLE">
+      <column name="Essn" sqlType="VARCHAR" precision="15" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Dependent_name" sqlType="VARCHAR" precision="15" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Sex" sqlType="VARCHAR" precision="15" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Bdate" sqlType="VARCHAR" precision="15" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Relationship" sqlType="VARCHAR" precision="15" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="Essn,Dependent_name"/>
+    </table>
+    <table name="DEPT_LOCATIONS" schema="" catalog="exb5209" type="TABLE">
+      <column name="Dnumber" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Dlocation" sqlType="VARCHAR" precision="15" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="Dnumber,Dlocation"/>
+    </table>
+    <table name="EMPLOYEE" schema="" catalog="exb5209" type="TABLE">
+      <column name="Fname" sqlType="VARCHAR" precision="15" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Minit" sqlType="VARCHAR" precision="15" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Lname" sqlType="VARCHAR" precision="15" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Ssn" sqlType="VARCHAR" precision="15" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Bdate" sqlType="VARCHAR" precision="15" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Street" sqlType="VARCHAR" precision="15" scale="0" nullable="false" jdbcType="12"/>
+      <column name="City" sqlType="VARCHAR" precision="15" scale="0" nullable="false" jdbcType="12"/>
+      <column name="State" sqlType="VARCHAR" precision="15" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Sex" sqlType="VARCHAR" precision="15" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Salary" sqlType="FLOAT" precision="12" scale="0" nullable="false" jdbcType="7"/>
+      <column name="Super_ssn" sqlType="VARCHAR" precision="15" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Dno" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="Ssn"/>
+    </table>
+    <table name="PROJECT" schema="" catalog="exb5209" type="TABLE">
+      <column name="Pname" sqlType="VARCHAR" precision="15" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Pnumber" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Plocation" sqlType="VARCHAR" precision="15" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Dnum" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="Pnumber"/>
+    </table>
+    <table name="WORK_ON" schema="" catalog="exb5209" type="TABLE">
+      <column name="Essn" sqlType="VARCHAR" precision="15" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Pno" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Hours" sqlType="FLOAT" precision="12" scale="0" nullable="false" jdbcType="7"/>
+      <primary-key name="PRIMARY" columns="Essn,Pno"/>
+    </table>
+  </data-source>
+</component>

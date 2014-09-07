@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MongoConfiguration">
+    <option name="serverConfigurations">
+      <list>
+        <ServerConfiguration>
+          <option name="label" value="test" />
+          <option name="serverUrls">
+            <list>
+              <option value="localhost:27017" />
+            </list>
+          </option>
+        </ServerConfiguration>
+      </list>
+    </option>
+    <option name="shellPath" value="C:\Users\emery_000\Dropbox\Uta Docs\CSE 4331 - Database Implementation\Lab 2 -MongoDB\MongoDB 2.6 Standard\bin\mongo.exe" />
+  </component>
+</project>
+
